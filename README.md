@@ -1,72 +1,36 @@
 # Jormi_Depura
+v0.3	20210212	añadida sobrecarga y byte en binario
 
-lass Jormi_Depura
-{
-private:	
-		
-public:
+Constructor
 
-/*	
-	Constructor
-*/
 Jormi_Depura();
 
 
-/*
-	texto
+texto
 	Muestra una cadena de texto + \n
 	Entrada: cadena de texto
-*/
 void texto(String cadena);
 
 
-/*
-	salto
+salto
 	Inserta linea en blanco
-*/
 void salto();
 
 
-/*
-	xInt
-	Muestra el valor de una variable INT
-*/
-void xInt(String v, int x);
+Vble (sobrecargada)
+	Muestra el valor de una variable INT / String / bool / float / byte / ulong
+	String v, nombre variable
+	x, vble a mostrar
+void vble(String v, int x);
+void vble(String v, String x);
+void vble(String v, bool x);
+void vble(String v, float x);
+void vble(String v, byte x);
+void vble(String v, unsigned long x);
 
 
-/*
-	xString
-	Muestra el valor de una variable String
-*/
-void xString(String v, String x);
-
-
-/*
-	xBool
-	Muestra el valor de una variable bool
-*/
-void xBool(String v, bool x);
-
-
-/*
-	xFloat
-	Muestra el valor de una variable Float
-*/
-void xFloat(String v, float x);
-
-
-/*
-	xByte
-	Muestra el valor de una variable byte
-*/
-void xByte(String v, byte x);
-
-
-/*
-	xULong
-	Muestra el valor de una variable unsigned long
-*/
-void xULong(String v, unsigned long x);
-
-
-};
+Binario
+	Muestra el valor de una variable byte en binario
+	String v, nombre de la vble
+	Byte x, vble que mostrar
+void binario(String v, byte x);
