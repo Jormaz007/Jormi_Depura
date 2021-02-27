@@ -3,6 +3,7 @@
 	Librería para envio de mensajes de depuración
 	v0.1	20200906
 	v0.2	20210130
+	v0.3	20210212	añadida sobrecarga y byte en binario
 
 */
 
@@ -43,42 +44,49 @@ void salto();
 	xInt
 	Muestra el valor de una variable INT
 */
-void xInt(String v, int x);
+void vble(String v, int x);
 
 
 /*
 	xString
 	Muestra el valor de una variable String
 */
-void xString(String v, String x);
+void vble(String v, String x);
 
 
 /*
 	xBool
 	Muestra el valor de una variable bool
 */
-void xBool(String v, bool x);
+void vble(String v, bool x);
 
 
 /*
 	xFloat
 	Muestra el valor de una variable Float
 */
-void xFloat(String v, float x);
+void vble(String v, float x);
 
 
 /*
 	xByte
 	Muestra el valor de una variable byte
 */
-void xByte(String v, byte x);
+void vble(String v, byte x);
+
+
+/*
+	xBinario
+	Muestra el valor de una variable byte en binario
+*/
+void binario(String v, byte x);
 
 
 /*
 	xULong
 	Muestra el valor de una variable unsigned long
 */
-void xULong(String v, unsigned long x);
+void vble(String v, unsigned long x);
 
 
 };
